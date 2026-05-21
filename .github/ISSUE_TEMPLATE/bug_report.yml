@@ -1,0 +1,105 @@
+name: Bug Report
+description: Laporkan bug atau perilaku yang tidak sesuai di Sakala Dashboard.
+title: "fix: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah melaporkan bug. Mohon isi informasi berikut supaya bug lebih mudah direproduksi dan diperbaiki.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Ringkasan bug
+      description: Jelaskan bug secara singkat.
+      placeholder: Contoh: Tombol Deploy tidak berubah status setelah repository berhasil dibaca.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area yang terdampak
+      options:
+        - Auth / Login
+        - Onboarding
+        - Dashboard
+        - Projects
+        - Deployments
+        - Agent API
+        - Webhooks
+        - Admin / Validation Pulse
+        - UI / Styling
+        - Documentation
+        - Tests
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      description: Tuliskan langkah detail agar bug bisa dicoba ulang.
+      placeholder: |
+        1. Login ke dashboard
+        2. Klik New Project
+        3. Masukkan repository URL
+        4. Klik Deploy
+        5. Lihat error yang muncul
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Perilaku yang diharapkan
+      placeholder: Contoh: Status deployment berubah menjadi Building dan logs mulai muncul.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Perilaku yang terjadi
+      placeholder: Contoh: Status tetap Queued dan tidak ada logs yang tampil.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot / rekaman
+      description: Tambahkan screenshot, video, atau logs jika ada.
+      placeholder: Drag & drop file di sini.
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: Contoh: Chrome 138, Firefox 127
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Contoh: local Sail, staging, production
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / error message
+      render: shell
+      placeholder: Paste error/log terkait di sini.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Saya sudah mencari issue serupa sebelumnya.
+          required: true
+        - label: Saya tidak menyertakan secret, token, credential, atau data sensitif.
+          required: true

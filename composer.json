@@ -1,15 +1,16 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/svelte-starter-kit",
+    "name": "gmedia/sakala-dashboard",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Laravel and Inertia control plane for the Sakala developer deployment platform.",
     "keywords": [
+        "deployment",
         "laravel",
-        "framework"
+        "sakala"
     ],
-    "license": "MIT",
+    "license": "Apache-2.0",
     "require": {
-        "php": "^8.3",
+        "php": "^8.5",
         "inertiajs/inertia-laravel": "^3.0",
         "laravel/chisel": "^0.1.0",
         "laravel/fortify": "^1.37.2",

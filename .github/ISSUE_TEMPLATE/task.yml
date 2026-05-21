@@ -1,0 +1,101 @@
+name: Task
+description: Buat task kecil yang bisa dikerjakan contributor atau anak magang.
+title: "task: "
+labels:
+  - task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gunakan template ini untuk task implementasi kecil. Task yang baik harus jelas, sempit, dan punya acceptance criteria.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Tujuan
+      description: Jelaskan hasil akhir yang ingin dicapai.
+      placeholder: Contoh: Membuat komponen ProjectStatusBadge untuk menampilkan status Running, Building, Sleeping, Failed, dan Stopped.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Auth / Login
+        - Onboarding
+        - Dashboard UI
+        - Projects
+        - Deployments
+        - Agent API
+        - Webhooks
+        - Admin / Validation Pulse
+        - Documentation
+        - Tests
+        - Refactor
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Apa saja yang termasuk dalam task ini?
+      placeholder: |
+        - Buat komponen Svelte
+        - Tambahkan variant status
+        - Gunakan warna sesuai design token Sakala
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Di luar scope
+      description: Apa yang tidak perlu dikerjakan di task ini?
+      placeholder: |
+        - Tidak perlu integrasi API
+        - Tidak perlu mengubah halaman detail project
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: Kondisi yang harus terpenuhi agar task dianggap selesai.
+      placeholder: |
+        - Komponen bisa menerima prop status
+        - Semua status punya warna berbeda
+        - Tidak ada error TypeScript/Svelte
+        - UI tetap readable di light mode
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_notes
+    attributes:
+      label: Catatan implementasi
+      description: Tambahkan arahan teknis jika ada.
+      placeholder: Contoh: Simpan komponen di resources/js/components/sakala/ProjectStatusBadge.svelte
+
+  - type: textarea
+    id: test_plan
+    attributes:
+      label: Test plan
+      placeholder: |
+        - Jalankan npm run build
+        - Cek komponen di halaman dashboard
+        - Tambahkan test jika menyentuh backend logic
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Perkiraan tingkat kesulitan
+      options:
+        - good first issue
+        - easy
+        - medium
+        - hard
+    validations:
+      required: true

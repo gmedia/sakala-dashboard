@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Diskusi umum Sakala
+    url: https://github.com/gmedia/sakala-dashboard/discussions
+    about: Gunakan Discussions untuk pertanyaan umum, ide awal, atau diskusi yang belum siap menjadi issue.
+  - name: Conventional Commits
+    url: https://www.conventionalcommits.org/en/v1.0.0/
+    about: Baca aturan format commit yang digunakan di repository ini.

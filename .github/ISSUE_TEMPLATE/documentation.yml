@@ -1,0 +1,68 @@
+name: Documentation
+description: Usulkan atau kerjakan perubahan dokumentasi.
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gunakan template ini untuk perubahan dokumentasi, baik README, CONTRIBUTING, ARCHITECTURE, AGENTS, setup guide, atau docs lain.
+
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Jenis dokumentasi
+      options:
+        - README
+        - CONTRIBUTING
+        - ARCHITECTURE
+        - AGENTS
+        - Local Setup
+        - API / Agent
+        - UI / UX
+        - Testing
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah dokumentasi saat ini
+      description: Jelaskan bagian yang kurang jelas, outdated, atau belum ada.
+      placeholder: Contoh: README belum menjelaskan cara setup GitHub OAuth untuk Socialite.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Perubahan yang diusulkan
+      placeholder: Contoh: Tambahkan section konfigurasi GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET, dan callback URL.
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_reader
+    attributes:
+      label: Target pembaca
+      placeholder: Contoh: Anak magang, contributor baru, admin/operator, agent developer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Referensi terkait
+      placeholder: Tambahkan link issue, PR, atau dokumentasi terkait jika ada.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Dokumentasi menggunakan Bahasa Indonesia yang jelas.
+          required: true
+        - label: Jika ada command, command sudah ditulis dalam code block.
+          required: true

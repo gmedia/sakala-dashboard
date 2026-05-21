@@ -1,0 +1,94 @@
+name: Feature Request
+description: Usulkan fitur baru untuk Sakala Dashboard.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gunakan template ini untuk mengusulkan fitur baru. Fokuskan pada masalah user dan manfaatnya, bukan hanya solusi teknis.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah yang ingin diselesaikan
+      description: Jelaskan masalah user yang membuat fitur ini dibutuhkan.
+      placeholder: Contoh: User pemula bingung kenapa deployment gagal karena port aplikasi tidak terbuka.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solusi yang diusulkan
+      description: Jelaskan fitur atau perubahan yang kamu usulkan.
+      placeholder: Contoh: Tambahkan hint otomatis ketika health check gagal karena port tidak merespons.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user_segment
+    attributes:
+      label: Siapa yang paling terbantu?
+      options:
+        - Mahasiswa
+        - Dosen / Kampus
+        - Developer Pemula
+        - Admin / Operator
+        - Agent Developer
+        - Contributor
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area fitur
+      options:
+        - Auth / Login
+        - Onboarding
+        - Dashboard
+        - Projects
+        - Deployments
+        - Agent API
+        - Webhooks
+        - Admin / Validation Pulse
+        - UI / UX
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: mvp_scope
+    attributes:
+      label: Scope MVP
+      description: Apa versi paling kecil dari fitur ini yang sudah memberi manfaat?
+      placeholder: Contoh: Tampilkan error summary sederhana tanpa membuat auto-fix terlebih dahulu.
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: Apa yang tidak termasuk dalam fitur ini?
+      placeholder: Contoh: Tidak termasuk auto-detect semua framework di tahap awal.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif yang dipertimbangkan
+      placeholder: Jelaskan opsi lain jika ada.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Fitur ini tidak membuat deploy flow menjadi lebih rumit untuk user pemula.
+          required: true
+        - label: Jika fitur ini teknis, advanced option tetap bisa disembunyikan dari flow utama.
+          required: false
