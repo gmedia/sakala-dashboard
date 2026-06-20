@@ -5,7 +5,7 @@
 
 This document extends the Laravel Boost guidelines with project-specific instructions for AI agents, automation tools, and human contributors working on **Sakala Dashboard**.
 
-Sakala Dashboard is the Laravel + Inertia + Svelte control plane for the Sakala developer deployment platform by **PT Media Sarana Data / GMEDIA**.
+Sakala Dashboard is the Laravel + Inertia + Svelte control plane for Sakala, an open-source deployment project supported by **PT Media Sarana Data / GMEDIA** as founding sponsor and infrastructure supporter.
 
 ---
 
@@ -14,12 +14,15 @@ Sakala Dashboard is the Laravel + Inertia + Svelte control plane for the Sakala 
 - Project name: **Sakala Dashboard**
 - Product name: **Sakala**
 - Domain: `sakala.dev`
-- Organization: **PT Media Sarana Data / GMEDIA**
+- Project stewardship: **Sakala Maintainers**
+- Founding sponsor: **PT Media Sarana Data / GMEDIA**
 - License: **Apache License 2.0**
 - Primary language for product copy and documentation: **Bahasa Indonesia**
 - Technical codebase language: English identifiers, English class names, English method names
 
 Sakala helps users deploy projects from Git repositories to public URLs without manually managing VPS, SSL, reverse proxy, Docker networking, or infrastructure wiring.
+
+Do not frame Sakala as a closed GMEDIA-owned product. Use this framing instead: Sakala is an open-source project maintained by Sakala maintainers and supported by GMEDIA as founding sponsor.
 
 ---
 
