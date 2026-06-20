@@ -2,9 +2,11 @@
 
 Terima kasih sudah tertarik berkontribusi ke **Sakala Dashboard**.
 
-Sakala Dashboard adalah control plane untuk Sakala, sebuah developer deployment platform dari **PT Media Sarana Data / GMEDIA**. Dashboard ini bertugas mengelola authentication, workspace, project, deployment record, onboarding, admin validation dashboard, API untuk agent, dan integrasi Git provider.
+Sakala Dashboard adalah control plane untuk Sakala, sebuah project deployment open-source yang didukung **PT Media Sarana Data / GMEDIA** sebagai founding sponsor dan infrastructure supporter. Dashboard ini bertugas mengelola authentication, workspace, project, deployment record, onboarding, admin validation dashboard, API untuk agent, dan integrasi Git provider.
 
 Project ini masih berada pada fase awal/MVP. Fokus kontribusi saat ini adalah membangun fondasi yang rapi, mudah dipahami, aman untuk dikembangkan bersama anak magang/contributor, dan cukup fleksibel untuk berkembang menjadi platform yang lebih besar.
+
+Kontribusi harus menjaga framing Sakala sebagai project open-source. Hindari wording seperti "Sakala by GMEDIA" atau "produk GMEDIA"; gunakan "Sakala didukung GMEDIA sebagai sponsor pendiri".
 
 ---
 

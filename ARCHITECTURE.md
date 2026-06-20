@@ -8,7 +8,9 @@ Sakala Dashboard adalah **control plane** untuk Sakala. Ia mengelola data, UI, w
 
 ## 1. Product Context
 
-Sakala adalah developer deployment platform dari **PT Media Sarana Data / GMEDIA**.
+Sakala adalah project deployment open-source yang diinisiasi oleh maintainer Sakala dan didukung oleh **PT Media Sarana Data / GMEDIA** sebagai founding sponsor dan infrastructure supporter.
+
+GMEDIA menyediakan dukungan awal berupa domain, infrastruktur, ruang eksperimen, dan dukungan teknis. Dukungan ini tidak mengubah batas teknis atau prinsip open-source Sakala.
 
 Tujuannya adalah membantu user menjalankan project dari Git ke URL publik tanpa harus mengelola VPS, SSL, reverse proxy, container networking, atau konfigurasi infrastruktur manual.
 
